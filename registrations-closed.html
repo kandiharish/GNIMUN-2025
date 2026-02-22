@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrations Closed - GNIMUN 2025</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Syne:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="committee.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <style>
+        .closed-section {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url('assets/background1.png') center/cover no-repeat;
+            padding: 2rem;
+        }
+
+        .closed-card {
+            background: rgba(28, 28, 43, 0.6);
+            backdrop-filter: blur(20px);
+            padding: 4rem;
+            border-radius: 30px;
+            border: 1px solid rgba(0, 87, 255, 0.2);
+            max-width: 600px;
+            width: 100%;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 0.8s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .closed-icon {
+            font-size: 4rem;
+            color: #0057FF;
+            margin-bottom: 2rem;
+        }
+
+        .closed-card h1 {
+            font-family: 'Syne', sans-serif;
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            background: linear-gradient(to right, #fff, #0057FF);
+            background-clip: text;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .closed-card p {
+            color: #A9A9B8;
+            font-size: 1.1rem;
+            margin-bottom: 2.5rem;
+            line-height: 1.6;
+        }
+
+        .actions {
+            display: flex;
+            gap: 1rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .btn-home {
+            background: #0057FF;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid #0057FF;
+        }
+
+        .btn-home:hover {
+            background: transparent;
+            color: #0057FF;
+        }
+
+        .btn-contact {
+            background: transparent;
+            color: white;
+            padding: 12px 30px;
+            border-radius: 50px;
+            font-weight: 600;
+            transition: all 0.3s ease;
+            text-decoration: none;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .btn-contact:hover {
+            border-color: white;
+            background: white;
+            color: black;
+        }
+    </style>
+</head>
+
+<body>
+    <section class="closed-section">
+        <div class="closed-card">
+            <div class="closed-icon">
+                <i class="fas fa-lock"></i>
+            </div>
+            <h1>Registrations Closed</h1>
+            <p>Thank you for your interest in GNIMUN 2025. The registration window for this event has officially closed
+                as the event has concluded.</p>
+            <p style="font-size: 0.9rem; margin-top: -1.5rem; margin-bottom: 2rem;">Stay tuned for updates on our next
+                edition!</p>
+
+            <div class="actions">
+                <a href="index.html" class="btn-home">Back to Home</a>
+                <a href="contact.html" class="btn-contact">Contact Us</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
