@@ -678,7 +678,8 @@ h6 {
 
 @media (max-width: 768px) {
     .secretariat-grid {
-        grid-template-columns: 1fr;
+        grid-template-columns: 1fr !important;
+        /* Override desktop !important */
         gap: 1rem;
     }
 
@@ -693,9 +694,9 @@ h6 {
         aspect-ratio: 2 / 3;
     }
 
-    /* Slightly bigger message text on mobile */
     #message {
-        font-size: 1.8vw;
+        font-size: 14px;
+        /* Readable on mobile */
     }
 
     /* Section title padding adjustment */
