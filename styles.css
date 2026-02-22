@@ -682,9 +682,8 @@ h6 {
         gap: 1rem;
     }
 
-    /* Image appears FIRST on mobile */
+    /* Image appears BELOW message on mobile */
     .secretariat-card.secretariat-photo {
-        order: -1;
         padding: 0.75rem !important;
     }
 
