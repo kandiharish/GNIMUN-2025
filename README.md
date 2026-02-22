@@ -101,6 +101,13 @@ git clone https://github.com/YOUR_USERNAME/gnimun-website.git
 
 ---
 
+## 📄 Copyright
+
+© 2025 GNIMUN — Guru Nanak Institutions, Hyderabad. All rights reserved.
+Unauthorized copying or redistribution of this website's content is prohibited.
+
+---
+
 ## 🌐 Deployment (GitHub Pages + GoDaddy Domain)
 
 ### GitHub Pages
