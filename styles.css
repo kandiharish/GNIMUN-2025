@@ -626,12 +626,10 @@ h6 {
 
 
 .secretariat-grid {
-    display: grid;
-    grid-template-columns: 3fr 2fr !important;
-    /* 60:40 — decreased by another 10% */
+    display: flex;
+    flex-direction: row;
     gap: 1.5rem;
     align-items: stretch;
-    transform: none;
 }
 
 .secretariat-card {
@@ -643,19 +641,20 @@ h6 {
 }
 
 .secretariat-details {
+    flex: 0 0 60%;
+    /* 60% width on desktop */
     display: flex;
     flex-direction: column;
     justify-content: center;
     background-color: white;
-    transform: none;
 }
 
 .secretariat-photo {
+    flex: 0 0 40%;
+    /* 40% width on desktop */
     display: flex;
-    object-fit: cover;
     align-items: center;
     justify-content: center;
-    transform: none;
 }
 
 
@@ -677,32 +676,42 @@ h6 {
 }
 
 @media (max-width: 768px) {
+
+    /* Stack vertically: message on top, image on bottom */
     .secretariat-grid {
-        grid-template-columns: 1fr !important;
-        /* Override desktop !important */
+        flex-direction: column !important;
         gap: 1rem;
     }
 
-    /* Image appears BELOW message on mobile */
-    .secretariat-card.secretariat-photo {
-        padding: 0.75rem !important;
+    .secretariat-card.secretariat-details {
+        order: 1;
+        /* Message FIRST */
+        width: 100%;
     }
 
-    /* Taller portrait on mobile for proper head-to-knee view */
+    .secretariat-card.secretariat-photo {
+        order: 2;
+        /* Image SECOND */
+        width: 100%;
+        padding: 1rem !important;
+    }
+
+    /* Portrait image sizing for mobile */
     .secretariat-image {
-        max-width: 280px;
+        max-width: 260px;
         aspect-ratio: 2 / 3;
     }
 
+    /* Readable message text on mobile */
     #message {
-        font-size: 14px;
-        /* Readable on mobile */
+        font-size: 13px;
+        line-height: 1.6;
     }
 
-    /* Section title padding adjustment */
+    /* Section title on mobile */
     #section-title-2 {
-        padding-left: 0.75rem;
-        font-size: 4vh;
+        padding-left: 0.5rem;
+        font-size: 5vw;
     }
 }
 
